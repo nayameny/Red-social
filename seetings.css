@@ -1,0 +1,148 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 260px;
+    background-color: #1F2A44; /* Azul oscuro elegante */
+    color: #fff;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    border-radius: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+    padding-left: 35px;
+}
+
+/* Contenedor principal de configuración */
+.main-container {
+    margin-left: 270px;
+    padding: 40px;
+    width: calc(100% - 270px);
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.settings-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Secciones de configuración */
+.settings-section {
+    margin-bottom: 40px;
+}
+
+.settings-section h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilos del formulario */
+.settings-form .form-group {
+    margin-bottom: 20px;
+}
+
+.settings-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.settings-form input, 
+.settings-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.settings-form input:focus, 
+.settings-form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.settings-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para eliminar cuenta */
+.delete-account {
+    width: 100%;
+    padding: 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.delete-account:hover {
+    background-color: #c0392b;
+}

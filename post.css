@@ -1,0 +1,145 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #f4f7fb;
+    min-height: 100vh;
+    color: #333;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #1e3d58; /* Azul sofisticado */
+    color: #fff;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 25px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #0f2a3d;
+    padding-left: 35px;
+}
+
+/* Contenido principal (Formulario de publicación) */
+.main-container {
+    margin-left: 270px;
+    padding: 30px;
+    width: calc(100% - 270px);
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e3d58;
+    margin-bottom: 20px;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #1e3d58;
+    outline: none;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #1e3d58;
+    outline: none;
+}
+
+.publish-btn {
+    background-color: #1e3d58;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.publish-btn:hover {
+    background-color: #123552;
+    transform: scale(1.05);
+}
+
+/* Efectos para los campos de entrada */
+input[type="file"], textarea {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+input[type="file"]:hover, textarea:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

@@ -1,0 +1,134 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: #f7f7f7; /* Fondo suave */
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 260px;
+    background-color: #2c3e50; /* Azul oscuro elegante */
+    color: #fff;
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+    padding-left: 35px;
+}
+
+/* Contenido principal (Notificaciones) */
+.main-container {
+    margin-left: 270px;
+    padding: 40px;
+    width: calc(100% - 270px);
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Lista de notificaciones */
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Item de notificación */
+.notification-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.notification-item:hover {
+    background-color: #f4f4f4;
+    transform: translateX(10px);
+}
+
+/* Icono de usuario */
+.notification-icon {
+    margin-right: 20px;
+}
+
+.notification-icon img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+/* Contenido de la notificación */
+.notification-content {
+    flex-grow: 1;
+}
+
+.notification-content p {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.notification-time {
+    font-size: 14px;
+    color: #95a5a6;
+    margin-top: 8px;
+    display: block;
+}
+
+/* Transiciones de hover */
+.notification-item:hover {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}

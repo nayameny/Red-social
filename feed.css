@@ -1,0 +1,155 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #0066cc; /* Azul elegante */
+    color: #fff;
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 15px 15px 0; /* Esquinas más redondeadas */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px; /* Espaciado superior */
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px; /* Mayor espacio alrededor del texto */
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease; /* Transiciones suaves */
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #004999; /* Azul más oscuro */
+    padding-left: 30px; /* Efecto de desplazamiento al pasar el mouse */
+}
+
+/* Contenido principal (Feed) */
+.feed-container {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+/* Publicaciones */
+.post {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease; /* Efecto suave de sombra */
+}
+
+.post:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Sombra más grande al pasar el mouse */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h3 {
+    font-size: 18px;
+    font-weight: 600; /* Negrita para el nombre */
+    color: #333;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #888;
+}
+
+.post-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.post-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Pie de la publicación */
+.post-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #004999;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+button:active {
+    transform: translateY(2px); /* Efecto al hacer clic */
+}
+
+/* Estilo para los botones de "Me gusta" y "Comentar" */
+.like-btn, .comment-btn {
+    flex: 1;
+    margin: 0 5px;
+    text-align: center;
+}
+
+
+

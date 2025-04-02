@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Red Social</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Mensajes</a></li>
+            <li><a href="#">Notificaciones</a></li>
+            <li><a href="#">Amigos</a></li>
+            <li><a href="#">Configuración</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal (Perfil) -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-info">
+                <img class="profile-pic" src="https://via.placeholder.com/150" alt="Usuario">
+                <div class="user-details">
+                    <h2>Juan Pérez</h2>
+                    <p>@juanperez</p>
+                    <p class="bio">Aventurero. Viajero. Amante de la tecnología y la fotografía. Siempre buscando aprender algo nuevo.</p>
+                    <button class="edit-btn">Editar Perfil</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información de seguidores y seguidos -->
+        <div class="followers-info">
+            <div class="followers">
+                <h3>Seguidores</h3>
+                <p>245</p>
+            </div>
+            <div class="following">
+                <h3>Seguidos</h3>
+                <p>180</p>
+            </div>
+        </div>
+
+        <!-- Publicaciones -->
+        <div class="posts">
+            <h3>Publicaciones</h3>
+            <div class="post">
+                <div class="post-header">
+                    <img class="post-pic" src="https://via.placeholder.com/50" alt="Usuario 1">
+                    <div class="post-info">
+                        <h4>Juan Pérez</h4>
+                        <p>@juanperez</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>¡Acabo de regresar de unas vacaciones geniales! #viajes #aventura</p>
+                    <img src="https://via.placeholder.com/500x300" alt="Imagen de viaje">
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn">Me gusta</button>
+                    <button class="comment-btn">Comentar</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img class="post-pic" src="https://via.placeholder.com/50" alt="Usuario 2">
+                    <div class="post-info">
+                        <h4>Ana Gómez</h4>
+                        <p>@anagomez</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Hoy es un gran día para aprender algo nuevo. ¡Nos vemos en clase! #educación</p>
+                    <div class="post-video">
+                        <video width="100%" height="auto" controls>
+                            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                    </div>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn">Me gusta</button>
+                    <button class="comment-btn">Comentar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
